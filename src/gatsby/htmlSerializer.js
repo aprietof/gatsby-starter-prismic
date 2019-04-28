@@ -36,7 +36,7 @@ const htmlSerializer = (type, element, content) => {
       if (codeBlock.includes(element.data.label)) {
         return `<pre class="language-${element.data.label}"><code class="language-${
           element.data.label
-        }">${Prism.highlight(content, Prism.languages[element.label])}</code></pre>`
+        }">${Prism.highlight(content, Prism.languages[element.data.label])}</code></pre>`
       }
       return null
     }
